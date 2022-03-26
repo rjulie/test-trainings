@@ -8,14 +8,17 @@
 # dans les autres
 # la fonction retourne le nombre donné
 
+# faire une boucle
+# ecrire en moins de lignes (deux méthodes?)
+
 def fizzbuzz_function(number)
   if number >= 1 && 100 >= number
     if (number % 15).zero?
-      'fizz'
+      'fizzbuzz'
     elsif (number % 5).zero?
       'buzz'
     elsif (number % 3).zero?
-      'fizzbuzz'
+      'fizz'
     else
       number
     end
