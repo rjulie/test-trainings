@@ -26,3 +26,24 @@ def fizzbuzz_function(number)
     'Please try again with a number between 1 an 100'
   end
 end
+
+# créer une petit algo pour savoir sur une suite de chiffre
+# lesquels sont divisibles par et 3 et 5
+
+def divisible_by(numbers_range)
+  numbers_range.select do |n|
+    n.divisible_by?(3) &&  n.divisible_by?(5)
+  end
+end
+
+# 2 tableaux de chiffres triés par ordre croissant,
+# ecrire une fonction pour en sortir un tableau
+# avec tous les chiffres des 2 tableaux triés
+# aussi par ordre croissant
+
+def sorted_array(array1, array2)
+  sorted_array1 = array1.sort
+  sorted_array2 = array2.sort
+  arrays_joined = sorted_array1 + sorted_array2
+  arrays_joined.sort
+end
